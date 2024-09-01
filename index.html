@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Anvil Technologies</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+  <!-- Favicons -->
+  <link href="assets/img/anvilicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/anvilogos.png" alt="">
+        <!-- <h1 class="sitename">Arsha</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <li><a hidden href="#team">Team</a></li>
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Forging IT Excellence</h1>
+            <p>Turning Technology into Success</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <!-- <div class="container section-title" data-aos="fade-up">
+            <h2>Partnership with</h2>
+          </div> -->
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/1.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/2.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/3.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/4.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/5.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/6.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/7.png" class="partner img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/8.png" class="partner img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              <p>The term "anvil" symbolizes strength, durability, and the process of crafting and refining—traits often associated with creating robust and reliable infrastructure, including IT systems.</p> Anvil Technologies Pvt. Ltd., based in Kathmandu, Nepal, is a certified IT service provider specializing in advanced services and technology solutions. We offer a wide range of services including networking, cybersecurity, server infrastructure, IT consulting, managed services, professional services, and cloud-based solutions. Our offerings cater to industries such as banking, financial services, insurance, enterprises, healthcare, education, and the public/government sector.<br>
+            </p>
+            <ul>
+              <li class="popup" onclick="myFunction('myone')"><i class="bi bi-check2-circle fa-4x "></i> <span>Commitment to transcending the conventional product delivery approach in the IT industry. <span class="popuptext" id="myone">As an IT service-oriented company, we aim to go beyond the typical product delivery approach prevalent in the industry. By understanding our customers' business needs and assessing industry practices, we are dedicated to providing cost-effective solutions and services that ensure a solid return on investment. 
+              </span></span></li>
+              <li class="popup" onclick="myFunction('mytwo')"><i class="bi bi-check2-circle"></i> <span>Provision of 24/7 support services, emphasizing their team of skilled professionals who handle a range of IT challenges and their commitments. <span class="popuptext" id="mytwo">Additionally, we offer 24/7 support services to our clients, backed by a team of highly skilled, experienced, and certified industry professionals who can design, optimize, migrate, merge, configure, and troubleshoot everything from simple to complex IT challenges. Our focus is on delivering reliable, scalable, and cost-effective solutions while maintaining a strong service-oriented philosophy.
+              </span></span></li>
+              <li class="popup" onclick="myFunction('mythree')"><i class="bi bi-check2-circle"></i> <span>
+                Advancing information technology within organizations, particularly by supporting their transition through digital transformation.<span class="popuptext" id="mythree">We are committed to contributing to the advancement of information technology within organizations, helping them navigate today's era of digital transformation smoothly and securely. This includes initiatives like developing smart offices and smart cities in Nepal.
+                </span></span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 imageabout" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3>
+                <!-- <span>Why us</span> -->
+                <strong>Why Choose Us?</strong></h3>
+              <p>
+                Anvil Technologies inputs your site with different steps.  First is the initial overall idea, which is followed by information and creativity. These important factors, when viewed all together, gives us the vision to create your website with overall benefits for you. A unique combination of other factors is what our internal team agenda goes through that helps us to come up with more than a website. Our work is the main benchmark that we believe describes our excellence. The satisfaction and happiness of our national and international clients are what speak our effort.  
+
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> We guarantee our work.</h3>
+                <div class="faq-content">
+                  <p>Our work has always satisfied all of our clients' expectations.  We provide overall handling when you're with us and if your satisfaction level doesn't match the work, we fix it at no cost. Imagine always believes in keeping the word it speaks so clients satisfaction and our guarantee is always a hand-in-hand process. We all work week in and week out. In addition, our strong team ethics and ability to discuss a task at a convenient meeting point are noticeably helpful to get things done - guaranteed.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span> We're responsive.</h3>
+                <div class="faq-content">
+                  <p>We believe a responsive organization is always the best for every client. Excellent communication service is the recurring hallmark of our business and we recognize each customer as an individual who wants individual service. For the convenience of our clients, we are always responsive and exactly to the point so they don't get confused with any information we provide.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span>We deliver business solutions.</h3>
+                <div class="faq-content">
+                  <p>We apply technology to deliver business solutions that enable new capabilities, improve the efficiency of your business, and help you communicate more effectively. Quality is the signature of our work. We value your business and because of this, we make your product work. Our main agenda while going through your project is to give you the best of the best that you deserve or we can offer. Delivering business solutions is one of the effective ways to make our clients satisfied and the league of competition is what is believed. Imagine is a leading organization and it can be justified by exploring this part.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>04</span>We listen, suggest, and update.</h3>
+                <div class="faq-content">
+                  <p>Our main objective before our work is to grab the intention of the clients as their desire is the number one element through which we present the reality of what they want. Then, we offer an approach of recommendations and suggestions to our clients so they can know a better perspective to build out their ICT systems. Later, a phase comes with updates, information, and input. The various elements that we provide during the work are a helpful point to deliver an overall solid work package.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              
+              <div class="faq-item">
+                <h3><span>05</span>We have a proven methodology.</h3>
+                <div class="faq-content">
+                  <p>We’ve developed and refined our methods over many years, so you can expect our services and projects to be delivered consistently. We work through different aspects that can help to give your infrastructure the best performance. our experienced and professionally qualified team supports and builds a robust service.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Our Expertise</h3><br>
+            <!-- <p class="fst-italic">
+              These are the skills we have.
+            </p> -->
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>Network & Security</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Virtualization</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              
+              <div class="progress">
+                <span class="skill"><span>System Integration</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Server & Storages</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Cloud</span> <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>We have tremendous experience in the field of Networking, System Integrations & Security. We assure you our team of experts at all levels of our services have years of experience backing them, which adds the credibility of an expert workforce and coordinate with values of costumers. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/networking.png" alt=""></div>
+              <h4><a href="" class="stretched-link">Network & Security</a></h4>
+              <p>Designing and managing secure and efficient network infrastructures to protect data and ensure high performance. </p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/virtual.png" alt=""></div>
+              <h4><a href="" class="stretched-link">Virtualization</a></h4>
+              <p>Optimizing IT resources through server, storage, and network virtualization for cost efficiency and scalability.</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/storage.png" alt=""></div>
+              <h4><a href="" class="stretched-link">Server & Storages</a></h4>
+              <p>Managing and maintaining servers and storage solutions for robust, reliable, and scalable data environments.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/system.png" alt=""></div>
+              <h4><a href="" class="stretched-link">System Integration</a></h4>
+              <p>Connecting disparate IT systems and applications to streamline processes and improve data flow.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/cloud.png" alt=""></div>
+              <h4><a href="" class="stretched-link">Cloud Based Solutions</a></h4>
+              <p>Providing scalable, flexible, and cost-effective cloud infrastructure and services for remote access and growth.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/it.png" alt=""></div>
+              <h4><a href="" class="stretched-link">IT Consulting</a></h4>
+              <p>Offering expert advice and strategic planning to align technology with business goals.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/manage.png" alt=""></i></div>
+              <h4><a href="" class="stretched-link">Managed Services</a></h4>
+              <p> Proactively managing and maintaining IT infrastructure and applications to ensure optimal performance and cost predictability.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><img src="./assets/img/website.png" alt=""></div>
+              <h4><a href="" class="stretched-link">Web Designing</a></h4>
+              <p>Creating visually appealing, responsive, and user-friendly websites to enhance online presence and engagement.</p>
+            </div>
+          </div><!-- End Service Item -->
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/call.png" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Experience excellence in IT—Contact us now to elevate your technology game!</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="mailto:info@anvil.com.np">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  
+
+    <!-- Team Section -->
+    <section hidden id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/shrawan.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Shrawan Jha</h4>
+                <span>Founder</span>
+                <p>IT Professional with a demonstrated history of working in the information technology and services industry.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/pramit.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Pramit Amatya</h4>
+                <span>Web Developer</span>
+                <p>Front end and back end developer with the mindset of learning and giving his best.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/sushil.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sushil Maharjan </h4>
+                <span>Fortinet - SME</span>
+                <p>Security architect with 5 years of hands-on expertise, dedicated to lifelong learning in the ever-evolving digital security realm.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>At Anvil Technologies, we understand that navigating the world of IT can be complex. That’s why we’ve compiled answers to some of the most frequently asked questions about our services and solutions. Whether you’re looking to enhance your IT infrastructure, secure your network, or explore cloud-based options, our FAQ section is designed to provide you with the clarity and information you need to make informed decisions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What types of IT services do you provide?</h3>
+                <div class="faq-content">
+                  <p>We offer a full range of IT services, including network and security management, virtualization, server and storage management, system integration, cloud solutions, IT consulting, managed services, and web design.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How can your IT solutions benefit my business?</h3>
+                <div class="faq-content">
+                  <p>Our IT solutions are designed to optimize your technology infrastructure, enhance security, improve efficiency, reduce costs, and support scalability, ensuring your business is ready for growth and innovation.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What industries do you specialize in?</h3>
+                <div class="faq-content">
+                  <p>We serve a wide range of industries, including healthcare, finance, education, retail, manufacturing, and more, offering specialized solutions to meet industry-specific needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What is included in your managed IT services?</h3>
+                <div class="faq-content">
+                  <p>Our managed IT services include proactive monitoring, maintenance, IT support, network management, security management, and disaster recovery to keep your systems running smoothly.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How does your IT consulting process work?</h3>
+                <div class="faq-content">
+                  <p>Our IT consulting process begins with a thorough assessment of your current IT environment, followed by strategy development, solution design, implementation, and ongoing support to help you achieve your business goals.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Do you offer support for existing IT systems?</h3>
+                <div class="faq-content">
+                  <p>Yes, we provide support and maintenance for existing IT systems, including troubleshooting, upgrades, patch management, and performance optimization.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How quickly can you respond to an IT emergency?</h3>
+                <div class="faq-content">
+                  <p>We provide rapid response support for IT emergencies, with a dedicated team ready to address issues promptly and minimize downtime.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>We are here to answer any question you may have.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Dhokatole Ward No. 19, Kathmandu, Nepal</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+977-9841236388</p>
+                </div>
+              </div><!-- End Info Item -->
+              
+              <a href="mailto:info@anvil.com.np">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+              </a>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>info@anvil.com.np</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3532.366225957518!2d85.30271407604317!3d27.705976725550855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQyJzIxLjUiTiA4NcKwMTgnMTkuMCJF!5e0!3m2!1sen!2snp!4v1725126260380!5m2!1sen!2snp" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <input type="hidden" name="access_key" value="f25fb281-4f51-491d-b072-5ed09c6ee71a">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <!-- <div class="g-recaptcha" data-sitekey="6Lc2TzMqAAAAADOFWH_ZKbHk7NlbRc7kWVUzzQ7b"></div> -->
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html">
+            <span class="sitename"><img src="assets/img/anvilfooter.png" alt=""></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Dhokatole Ward No. 19</p>
+            <p>Kathmandu, Nepal</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+977-9841236388</span></p>
+            <p><strong>Email:</strong> <span>info@anvil.com.np</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Network & Security</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Virtualization</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Server & Storages</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">System Integration</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Cloud Based Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">IT Consulting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Managed Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Web Designing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Social-media platforms</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Anvil Technologies</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
