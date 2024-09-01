@@ -810,7 +810,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   position: relative;
 }
 
@@ -989,6 +989,9 @@ section,
 --------------------------------------------------------------*/
 .about p{
   font-size: 17px;
+}
+.about .gap{
+  margin-bottom: -60px;
 }
 .about ul {
   list-style: none;
