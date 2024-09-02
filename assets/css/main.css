@@ -1114,6 +1114,7 @@ section,
 
 .why-us .content p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 16px;
 }
 
 .why-us .faq-container .faq-item {
