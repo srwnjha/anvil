@@ -1103,12 +1103,13 @@ section,
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
+  margin-bottom: 30px;
 }
 
 .why-us .content p {
