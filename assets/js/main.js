@@ -8,6 +8,15 @@
 //Disable right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+//Captcha code
+// document.getElementById('your-form-id').addEventListener('submit', function(event) {
+//   // Check if reCAPTCHA is checked
+//   if (grecaptcha.getResponse() === "") {
+//     alert("Please complete the CAPTCHA");
+//     event.preventDefault(); // Prevent form submission if CAPTCHA is not solved
+//   }
+// });
+
 function myFunction(id) {
   var popup = document.getElementById(id);
   popup.classList.toggle("show");
