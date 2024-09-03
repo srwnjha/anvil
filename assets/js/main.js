@@ -8,6 +8,11 @@
 //Disable right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+document.addEventListener('touchstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault();
+  }
+}, {passive: false});
 //Captcha code
 // document.getElementById('your-form-id').addEventListener('submit', function(event) {
 //   // Check if reCAPTCHA is checked
