@@ -5,6 +5,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+//Disable right click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 function myFunction(id) {
   var popup = document.getElementById(id);
   popup.classList.toggle("show");
