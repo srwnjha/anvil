@@ -8,6 +8,7 @@
 //Disable right click
 document.addEventListener('contextmenu', event => event.preventDefault());
 
+//Iphone
 document.addEventListener('touchstart', function(event) {
   if (event.target.tagName === 'IMG') {
     event.preventDefault();
