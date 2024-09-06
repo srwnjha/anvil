@@ -35,6 +35,16 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "s-1I7IFpyA7d3llLO",
+      });
+   })();
+</script>
 </head>
 
 <body class="index-page">
@@ -659,42 +669,45 @@
           </div>
 
           <div class="col-lg-7">
-            <form id="your-form-id" action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="myForm" onsubmit="sendMail(event)" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
-                <input type="hidden" name="access_key" value="c1040e5c-d67e-43a9-bb09-2419c6a532c7">  <!--Pramit f25fb281-4f51-491d-b072-5ed09c6ee71a Shrawan c1040e5c-d67e-43a9-bb09-2419c6a532c7-->
 
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" >
                 </div>
 
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" class="form-control" name="email" id="email-field" >
                 </div>
 
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <input type="text" class="form-control" name="subject" id="subject-field" >
                 </div>
 
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" ></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <!-- <div class="g-recaptcha" data-sitekey="6LcZDTcqAAAAANCQ8UZpeqCBBmlxIM1PMWlYbImO"></div><br> -->
+                  <div class="my-message"></div>
+                <!-- <div
+                class="g-recaptcha"
+                data-sitekey="6LebYDcqAAAAAEcp-CD8oEqpg47pLPj-S0y5hyBl"
+              ></div> -->
+                  <!-- <div class="g-recaptcha" data-sitekey="6LebYDcqAAAAAEcp-CD8oEqpg47pLPj-S0y5hyBl"></div><br> -->
+                   <div
+                class="g-recaptcha"
+                data-sitekey="6LcZDTcqAAAAANCQ8UZpeqCBBmlxIM1PMWlYbImO"
+              ></div> <br>
                   <button type="submit">Send Message</button>
                 </div>
 
-              </div>
-            </form>
+              </form>
           </div><!-- End Contact Form -->
 
         </div>

@@ -2164,3 +2164,17 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.my-message {
+  display: none;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.successmessage {
+  display: block;
+  color: green;
+}
+.errormessage {
+  display: block;
+  color: red;
+}
