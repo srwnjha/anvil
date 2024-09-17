@@ -69,16 +69,7 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer */
 }
-@keyframes fade-up{
-  0%{
-      opacity: 0;
-      transform: translateY(30px) scale(0.9);
-  }
-  100%{
-      opacity: 1;
-      transform: translateY(0px) scale(1);
-  }
-}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -869,6 +860,26 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+@keyframes fade-up{
+  0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-inout{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.fade-in-fade-out{
+  animation: fade-inout 4s infinite alternate;
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -877,7 +888,6 @@ section,
   display: flex;
   align-items: center;
 }
-
 
 .background-clip{
   position: absolute;
@@ -889,12 +899,47 @@ section,
     transform: translate(-50%, -50%);
    filter: brightness(0.6);
 }
+
+.typewriter-text {
+  width: 32ch; /* Adjust the width based on the length of the text */
+  overflow: hidden; /* Hide the text overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: 3px solid; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+  font-family: monospace; /* Typewriter-like font */
+  
+  animation: typing 5s steps(25) 1.3s infinite normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+}
+50% {
+    width: 32ch; /* Matches the character length of the text */
+}
+100% {
+    width: 32ch; /* Keeps the text fully visible for a 1-second pause */
+}
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: white;
+  }
+  
+}
 .hero h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  animation: fade-up 1.5s;
+  /* animation: fade-up 1.5s; */
   /* color: cyan; */
 }
 
@@ -902,10 +947,10 @@ section,
   color: white;
   /* color: blue; */
   margin: 5px 0 30px 0;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 1.3;
   font-weight: 600;
-  animation: fade-up 4.5s;
+  /* animation: fade-up 3.5s; */
 
 }
 
