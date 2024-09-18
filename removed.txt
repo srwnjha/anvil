@@ -1,0 +1,80 @@
+@keyframes fade-up{
+  0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-inout{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.fade-in-fade-out{
+  animation: fade-inout 4s infinite alternate;
+}
+
+//typing
+.typewriter-text {
+  overflow: hidden; /* Hide the text overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-family: monospace; /* Typewriter-like font */
+  font-size: 24px; /* Adjust the size */
+  border-right: 3px solid; /* Cursor effect */
+  display: block; /* Each line will appear on a new line */
+  width: 0; /* Start with no width */
+  overflow: hidden;
+}
+
+/* Typing effect for the first line */
+.line1 {
+  animation: typing1 6s steps(23) 1s infinite normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect for the second line with a delay */
+.line2 {
+  animation: typing2 6s steps(23) 2.8s infinite normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing keyframes for the first line */
+@keyframes typing1 {
+  0% {
+      width: 0;
+  }
+  30% {
+      width: 22ch; /* Adjust based on the length of the first line */
+  }
+  100% {
+      width: 22ch; /* Hide it again after a pause */
+  }
+}
+
+/* Typing keyframes for the second line */
+@keyframes typing2 {
+  0% {
+      width: 0;
+  }
+  40% {
+      width: 32ch; /* Adjust based on the length of the second line */
+  }
+  70% {
+      width: 32ch; /* Hide it again after a pause */
+  }
+  100% {
+    width: 0; /* Hide it again */
+}
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: white;
+  }
+}
