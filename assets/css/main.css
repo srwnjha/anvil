@@ -18,9 +18,9 @@
 
 .utsaah-text {
   font-family: 'Utsaah', sans-serif;
-  font-size: 23px; /* You can change the size here */
+  font-size: 17px; /* You can change the size here */
   margin-left: 20px;
-  margin-top: -13px;
+  margin-top: -10px;
 }
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
