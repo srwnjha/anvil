@@ -11,10 +11,10 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-/* @font-face {
+@font-face {
   font-family: 'Utsaah';
   src: url('fonts/Utsaah.ttf') format('truetype'); 
-} */
+}
 
 .utsaah-text {
   font-family: 'Utsaah', sans-serif;
