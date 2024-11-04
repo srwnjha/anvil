@@ -249,3 +249,22 @@ function myFunction(id) {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+//Dark mode
+
+// const toggleButton = document.getElementById('theme-toggle');
+// const body = document.body;
+// const moonIcon = document.getElementById('dark');
+// const sunIcon = document.getElementById('light');
+
+// toggleButton.addEventListener('click', () => {
+//   body.classList.toggle('dark-mode');
+//   if (body.classList.contains('dark-mode')) {
+//     moonIcon.style.display = 'none';
+//     sunIcon.style.display = 'inline';
+//   } else {
+//     moonIcon.style.display = 'inline';
+//     sunIcon.style.display = 'none';
+//   }
+  
+// });

@@ -2236,9 +2236,13 @@ section,
 }
 
 /*Dark*/
-#dark{
+/* .toggling{
   width: 30px;
   cursor: pointer;
   margin-left: 20px;
-  filter: sepia(100%) hue-rotate(180deg) saturate(500%);
+  filter: invert(48%) sepia(75%) saturate(1000%) hue-rotate(95deg) brightness(0.9);
 }
+body.dark-mode {
+  --background-color: black;
+  --text-color: white;
+} */
