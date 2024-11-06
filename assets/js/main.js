@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 //Disable right click
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 //Iphone
 document.addEventListener('touchstart', function(event) {
