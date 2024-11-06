@@ -806,7 +806,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   padding: 60px 0;
   scroll-margin-top: 88px;
   overflow: clip;
@@ -881,16 +881,17 @@ section,
   align-items: center;
 }
 
-.background-clip{
+/* .background-clip {
   position: absolute;
   top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-   filter: brightness(0.6);
-}
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.6);
+  z-index: -1;
+} */
 
 .fade-in-left-to-right {
   position: relative;
