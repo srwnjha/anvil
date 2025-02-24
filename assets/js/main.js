@@ -92,12 +92,26 @@ function myFunction(id) {
   /**
    * Preloader
    */
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
+  // const preloader = document.querySelector("#preloader");
+  // if (preloader) {
+  //   window.addEventListener("load", () => {
+  //     preloader.remove();
+  //   });
+  // }
+  //Flickering preloader
+  window.addEventListener("load", function () {
+    document.getElementById("preloader").style.opacity = "0";
+    setTimeout(function () {
+      document.getElementById("preloader").style.display = "none";
+    }, 1500); // Matches the flicker animation duration
+  });
+
+  //Loading to see flickering
+  // window.addEventListener("load", function () {
+  //   let start = Date.now();
+  //   while (Date.now() - start < 10000) {} // Freeze page for 3 seconds
+  //   document.getElementById("preloader").style.display = "none";
+  // });
 
   /**
    * Scroll top button

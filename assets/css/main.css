@@ -723,11 +723,21 @@ h6 {
   background: var(--background-color);
   transition: all 0.6s ease-out;
 }
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  transition: opacity 0.6s ease-out;
+}
 
-#preloader:before {
+/* #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
+  top: calc(47% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
@@ -735,15 +745,33 @@ h6 {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
+} */
+#preloader img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  animation: flicker 1.5s infinite alternate;
 }
 
-@keyframes animate-preloader {
+/* @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
 
   100% {
     transform: rotate(360deg);
+  }
+} */
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
