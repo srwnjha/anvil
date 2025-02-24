@@ -1068,32 +1068,32 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# Brands Section
 --------------------------------------------------------------*/
-.clients {
+.brands {
   padding: 1px 0;
 }
 
-.clients .swiper {
+.brands .swiper {
   padding: 10px 0;
 }
 
-.clients .swiper-wrapper {
+.brands .swiper-wrapper {
   height: auto;
 }
 
-.clients .swiper-slide img {
+.brands .swiper-slide img {
   transition: 0.3s;
   padding: 0 10px;
 }
 
-.clients .partner {
+.brands .partner {
   object-fit: contain;
   width: 400px;
   height: 75px;
 }
 
-.clients .swiper-slide img:hover {
+.brands .swiper-slide img:hover {
   transform: scale(1.1);
 }
 
