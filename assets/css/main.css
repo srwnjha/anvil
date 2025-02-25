@@ -1043,8 +1043,8 @@ section,
     font-size: 28px;
     line-height: 36px;
   }
-  .background-clip {
-  }
+  /* .background-clip {
+  } */
   .hero p {
     font-size: 18px;
     line-height: 24px;
@@ -1393,6 +1393,35 @@ section,
   background-color: var(--heading-color);
 }
 
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients h3 {
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.clients h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid #37517e; /* Adjust the color and thickness as needed */
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 5px; /* Adds space between the text and the underline */
+}
+.clients img {
+  width: 140px;
+  margin-bottom: 25px;
+}
+.custom-margin {
+  margin-left: 110px; /* Adjust the value as needed */
+}
+
+@media (max-width: 991px) {
+  /* Remove margin for smaller screens */
+  .custom-margin {
+    margin-left: 0;
+  }
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
