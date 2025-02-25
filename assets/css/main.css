@@ -1072,10 +1072,11 @@ section,
 --------------------------------------------------------------*/
 .brands {
   padding: 1px 0;
+  margin-bottom: 40px;
 }
 
 .brands .swiper {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .brands .swiper-wrapper {
@@ -1085,16 +1086,18 @@ section,
 .brands .swiper-slide img {
   transition: 0.3s;
   padding: 0 10px;
+  filter: grayscale(100%);
 }
 
 .brands .partner {
   object-fit: contain;
   width: 400px;
-  height: 75px;
+  height: 80px;
 }
 
 .brands .swiper-slide img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  filter: grayscale(0%);
 }
 
 /*--------------------------------------------------------------
@@ -1396,32 +1399,60 @@ section,
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients h3 {
+.clients {
+  padding: 1px 0;
+}
+
+.clients .swiper {
+  padding: 10px 10px;
+}
+
+.clients .swiper-wrapper {
+  height: auto;
+}
+
+.clients .swiper-slide img {
+  transition: 0.3s;
+  padding: 0 10px;
+  filter: grayscale(100%);
+}
+
+.clients .partner {
+  object-fit: contain;
+  width: 400px; /* Increased width */
+  height: 100px; /* Adjust height if needed */
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.4); /* Slight enlargement on hover */
+  filter: grayscale(0%);
+}
+
+/* .clients h3 {
   font-weight: 400;
   font-size: 34px;
   margin-bottom: 30px;
 }
 .clients h2 {
   font-size: 2rem;
-  border-bottom: 3px solid #37517e; /* Adjust the color and thickness as needed */
+  border-bottom: 3px solid #37517e;
   display: inline-block;
   margin-bottom: 25px;
-  padding-bottom: 5px; /* Adds space between the text and the underline */
+  padding-bottom: 5px;
 }
 .clients img {
   width: 140px;
   margin-bottom: 25px;
 }
 .custom-margin {
-  margin-left: 110px; /* Adjust the value as needed */
+  margin-left: 110px;
 }
 
 @media (max-width: 991px) {
-  /* Remove margin for smaller screens */
   .custom-margin {
     margin-left: 0;
   }
-}
+} */
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
