@@ -1037,7 +1037,24 @@ section,
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-
+/*Cloud effect*/
+.cloud-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width to accommodate both repetitions */
+  height: 15%; /* Adjust height as needed */
+  background: url("/assets/img/cloudherobottom.png") repeat-x center bottom;
+  background-size: 25% 100%; /* Each repetition takes up 50% of the width */
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .cloud-bottom {
+    background-size: 50% 100%; /* For smaller screens */
+  }
+}
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
@@ -1071,6 +1088,64 @@ section,
 # Brands Section
 --------------------------------------------------------------*/
 .brands {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.brands .swiper {
+  padding: 20px 0;
+}
+
+.brands .swiper-wrapper {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.brands .swiper-slide {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands .swiper-slide img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  padding: 0 10px;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brands .swiper-slide-active {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.brands .swiper-slide-active img {
+  filter: grayscale(0%);
+  width: 200px;
+  height: 55px;
+}
+
+/* .brands .swiper-slide img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+} */
+@media (max-width: 750px) {
+  .brands .swiper-slide img {
+    width: 50%; /* Make image take up full width of container */
+    margin-left: 27px;
+  }
+  .brands .swiper-slide-active img {
+    filter: grayscale(0%);
+    width: 180px;
+    height: 50px;
+  }
+}
+/* .brands {
   padding: 1px 0;
   margin-bottom: 40px;
 }
@@ -1098,7 +1173,7 @@ section,
 .brands .swiper-slide img:hover {
   transform: scale(1.2);
   filter: grayscale(0%);
-}
+} */
 
 /*--------------------------------------------------------------
 # About Section
@@ -1427,7 +1502,12 @@ section,
   transform: scale(1.4); /* Slight enlargement on hover */
   filter: grayscale(0%);
 }
-
+@media (max-width: 480px) {
+  .clients .swiper-slide img {
+    width: 50%; /* Make image take up full width of container */
+    margin-left: 30px;
+  }
+}
 /* .clients h3 {
   font-weight: 400;
   font-size: 34px;
