@@ -1480,9 +1480,12 @@ section,
 
 .clients .swiper {
   padding: 10px 10px;
+  position: relative;
+  z-index: 10;
 }
 
 .clients .swiper-wrapper {
+  width: 100% !important;
   height: auto;
 }
 
@@ -1504,8 +1507,11 @@ section,
 }
 @media (max-width: 480px) {
   .clients .swiper-slide img {
-    width: 70%; /* Make image take up full width of container */
+    width: 75%; /* Make image take up full width of container */
     margin-left: 30px;
+  }
+  .clients .swiper-slide img {
+    filter: grayscale(0);
   }
 }
 /* .clients h3 {
